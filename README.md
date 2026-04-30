@@ -187,7 +187,7 @@ Full Stack Developer | AI Enthusiast | Database "Superbase" | Stripe "Security"
 **Varshini N** 
 Frontend Developer | Prompt engineer
 
-""Ankitha S N**
+**Ankitha S N**
 Backend Developer | Database
 
 **Sindhu N**
