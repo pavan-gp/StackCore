@@ -1,7 +1,7 @@
 # 🚀 AI Session Feedback Dashboard
 
 🔗 **Live Demo:**
-https://bfde9809-0480-449f-9d31-414020392230.canvases.tempo.build/dashboard
+https://bfde9809-0480-449f-9d31-414020392230.canvases.tempo.build/
 
 ---
 
