@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700;9..144,900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 214 44% 15%;
+    --foreground: 220 40% 93%;
+    --card: 214 44% 15%;
+    --card-foreground: 220 40% 93%;
+    --popover: 214 50% 12%;
+    --popover-foreground: 220 40% 93%;
+    --primary: 211 63% 42%;
+    --primary-foreground: 220 40% 93%;
+    --secondary: 214 40% 20%;
+    --secondary-foreground: 220 40% 93%;
+    --muted: 214 40% 22%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 214 40% 22%;
+    --accent-foreground: 220 40% 93%;
+    --destructive: 0 72% 56%;
+    --destructive-foreground: 220 40% 93%;
+    --border: 214 30% 25%;
+    --input: 214 30% 25%;
+    --ring: 211 63% 42%;
+    --radius: 0.75rem;
+
+    --chart-1: 211 63% 42%;
+    --chart-2: 142 43% 42%;
+    --chart-3: 42 76% 49%;
+    --chart-4: 280 60% 55%;
+    --chart-5: 0 72% 56%;
+
+    --sidebar-background: 214 50% 12%;
+    --sidebar-foreground: 220 40% 93%;
+    --sidebar-primary: 211 63% 42%;
+    --sidebar-primary-foreground: 220 40% 93%;
+    --sidebar-accent: 214 40% 20%;
+    --sidebar-accent-foreground: 220 40% 93%;
+    --sidebar-border: 214 30% 22%;
+    --sidebar-ring: 211 63% 42%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-color: #0f1f35;
+    color: #edf2f7;
+    font-family: "Space Grotesk", sans-serif;
+  }
+}
+
+.font-fraunces {
+  font-family: "Fraunces", serif;
+}
+
+.font-space {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.font-mono-jb {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Glassmorphism cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Grid texture overlay */
+.grid-texture {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Animations */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(43, 108, 176, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(43, 108, 176, 0.8);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-count-up {
+  animation: countUp 0.6s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.stagger-1 {
+  animation-delay: 50ms;
+}
+.stagger-2 {
+  animation-delay: 100ms;
+}
+.stagger-3 {
+  animation-delay: 150ms;
+}
+.stagger-4 {
+  animation-delay: 200ms;
+}
+.stagger-5 {
+  animation-delay: 250ms;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
