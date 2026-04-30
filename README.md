@@ -182,16 +182,16 @@ This project is for educational and development purposes.
 ## 👨‍💻 Author
 
 **Pavan G P**
-Full Stack Developer | AI Enthusiast | DataBase "Superbase"
+Full Stack Developer | AI Enthusiast | Database "Superbase" | Stripe "Security"
 
 **Varshini N** 
 Frontend Developer | Prompt engineer
 
 ""Ankitha S N**
-Backend Developer | UI/UX Designer
+Backend Developer | Database
 
 **Sindhu N**
-Designer | UI/UX Designer
+UI/UX Designer
 
 
 
